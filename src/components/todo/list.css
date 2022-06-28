@@ -1,0 +1,65 @@
+.list{
+  width: var(--content-width);
+  padding: 0 var(--content-padding);
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list .list_head{
+  display: flex;
+  justify-content: space-between;
+  line-height: 3em;
+  font-size: 1.5em;
+}
+
+.list .list_head .action{
+  font-size: .6em;
+  margin-left: 1em;
+  color: #999;
+  cursor: pointer;
+}
+
+.list .list_head .action:hover{
+  text-decoration: underline;
+  text-shadow: 0 0 1px rgb(206, 206, 206);
+}
+
+.list .todo_item{
+  /* display: flex; */
+  line-height: 2em;
+  height: 2em;
+  font-size: 1.4em;
+  position: relative;
+  background-color: rgb(94, 209, 209);
+  margin-bottom: .5em;
+  border-radius: 5px;
+}
+.list .todo_item .item_title{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2em;
+  right: 3em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.list .todo_item input{
+  position: relative;
+  left: .6em;
+  width: 1.4em;
+  height: 1.4em;
+  cursor: pointer;
+}
+
+.list .todo_item button{
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  border-color: rgb(94, 209, 209);
+}

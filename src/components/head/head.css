@@ -1,0 +1,30 @@
+.header{
+  display: flex;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6em;
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.header .header_center{
+  display: flex;
+  width: var(--content-width);
+  justify-content: space-between;
+  padding: 0 var(--content-padding);
+}
+
+.header .header_center .title{
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.header .header_center input{
+  padding: 10px 6px;
+}
+
+.header .header_center input:focus{
+  /* border-color: antiquewhite; */
+  outline: none;
+}
